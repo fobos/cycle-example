@@ -14,8 +14,8 @@ const log = str => x => {
 };
 
 export default function TabApp(responses) {
-    const tab1 = isolate(Tab1)(responses, 'tab1');
-    const tab2 = isolate(Tab2)(responses, 'tab2');
+    const tab1 = Tab1(responses, 'tab1');
+    const tab2 = Tab2(responses, 'tab2');
 
     const tab$ = Observable
         .merge(

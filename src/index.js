@@ -7,7 +7,7 @@ import TabApp from './TabApp';
 
 
 function main(responses) {
-    const tabApp = isolate(TabApp)(responses);
+    const tabApp = TabApp(responses);
 
     return {
         DOM: tabApp.DOM
